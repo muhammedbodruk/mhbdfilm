@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>kayıt ol</title>
+  </head>
+  <body>
+    <header>
+      <h1>lütfen formu eksiksiz doldurun</h1>
+    </header>
+    <hr />
+    <h2>hesap bilgileri</h2>
+    <form action="register.php">
+      <table>
+        <tbody>
+          <tr>
+            <td style="width: 120px">
+              <label for="username">kullanıcı adı:</label>
+            </td>
+            <td style="width: 20px"></td>
+            <td>
+              <input
+                placeholder="kullanıcı adınızı giriniz"
+                id="username"
+                type="text"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td style="width: 120px">
+              <label for="usermail">eposta:</label>
+            </td>
+            <td></td>
+            <td>
+              <input
+                placeholder="eposta adresinizi giriniz"
+                type="email"
+                id="usermail"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="password">parola:</label></td>
+            <td></td>
+            <td>
+              <input
+                placeholder="parolanızı giriniz"
+                type="password"
+                id="password"
+              />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+      <h2>kişisel bilgileriniz</h2>
+      <table>
+        <tbody>
+          <tr>
+            <td style="width: 120px"><label for="name">adınız:</label></td>
+            <td style="width: 20px"></td>
+            <td>
+              <input type="text" placeholder="adınızı giriniz" id="name" />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="surname">soyad</label></td>
+            <td></td>
+            <td>
+              <input
+                id="surname"
+                type="text"
+                placeholder="soyadınızı giriniz"
+                id=""
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="birtday">ne zaman doğdun</label></td>
+            <td></td>
+            <td><input type="date" id="birtday" /></td>
+          </tr>
+          <tr>
+            <td><label for="country">yaşadığın şehiz</label></td>
+            <td></td>
+            <td>
+              <select id="country">
+                <option value="0">seç</option>
+                <option value="44">malatya</option>
+                <option value="34">istanbul</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="gender">cinsiyet</label>
+            </td>
+            <td></td>
+            <td>
+              <input type="radio" name="gender" id="erkek" />
+              <label for="erkek">erkek</label
+              ><input type="radio" name="gender" id="kadın" />
+              <label for="kadın">kadın</label>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="favori_movie">en sevdiğin filmler</label></td>
+            <td></td>
+            <td>
+              <input type="checkbox" name="fm" id="fm" />
+              <label for="fm">Harry Potter</label>
+              <input type="checkbox" name="fm" id="fm0" />
+              <label for="fm0">Yüzüklerin Efendisi</label>
+              <input type="checkbox" name="fm" id="fm1" />
+              <label for="fm1">Esaretin Bedeli</label>
+              <input type="checkbox" name="fm" id="fm2" />
+              <label for="fm2">Matrix</label>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td>
+              <button type="submit">kaydet</button>
+              <button type="reset">temizle</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+  </body>
+</html>
