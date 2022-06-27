@@ -1,12 +1,12 @@
 body {
-    background-color: #d8e3e7;
-    color: #132c33;
+    background-color: #323232;
     text-align: center;
+    color: #fff;
   }
   nav {
     text-align: start;
   }
   a {
-    color: #132c33;
     text-decoration: none;
+    color: #fff;
   }
