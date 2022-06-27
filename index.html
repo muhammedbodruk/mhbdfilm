@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="style.css" />
     <style>
       header {
-        background-color: #126e82;color: #51C4D3;
+        background-color: #126e82;
+        color: #51c4d3;
       }
       nav {
         background-color: #126e82;
@@ -17,25 +18,44 @@
       .a {
         color: #fff;
       }
-      footer {background-color: #126e82;color: #fff;}
+      footer {
+        background-color: #126e82;
+        color: #fff;
+      }
+      h1 {
+        font-size: 3em;
+      }
     </style>
   </head>
   <body>
     <header>
-      <h1>MHBDFILM</h1>
-      <div>
-        <a href="register.html"><button>kayıt ol</button></a>
-        <a href="index.html"><button>ana sayfa</button></a>
-        <a href="film_onerileri/en-iyi-filmler.html"
-          ><button>en iyi filmler</button></a
-        >
-        <a href="filmler/harry_potter-1.html"
-          ><button>harry potter 1 izle</button></a
-        >
-        <a href="filmler/hmae.html"
-          ><button>hz Muhammed Allah'ın Elçisi izle</button></a
-        >
-      </div>
+      <table>
+        <tbody>
+          <tr>
+            <td><h1>MHBDFILM</h1></td>
+            <td style="width: 32px"></td>
+            <td style="font-size: 24px">
+              <a href="index.html"><b>ana sayfa</b></a>
+            </td>
+            <td>|</td>
+            <td style="font-size: 24px">
+              <a href="filmler/harry_potter-1.html">harry potter 1 izle</a>
+            </td>
+            <td>|</td>
+            <td style="font-size: 24px">
+              <a href="filmler/hmae.html">Hz. Muhammed: Allah'ın Elçisi filmini izle</a>
+            </td>
+            <td>|</td>
+            <td style="font-size: 24px">
+              <a href="film_onerileri/en-iyi-filmler.html">en iyi 3 film</a>
+            </td>
+            <td>|</td>
+            <td style="font-size: 24px">
+              <a href="register.html">kayıt ol</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </header>
     <hr />
     <section id="content">
@@ -101,7 +121,9 @@
                             </ul>
                             <ul>
                               <li>
-                                <a href="#film_onerileri" class="a">film önerileri</a>
+                                <a href="#film_onerileri" class="a"
+                                  >film önerileri</a
+                                >
                                 <ol>
                                   <li>
                                     <a href="#ef" class="a">en iyi filmler</a>
@@ -138,7 +160,7 @@
                     <tbody>
                       <tr style="vertical-align: top">
                         <td>
-                          <a href="filmler/hmae.html"></a>
+                          <a href="filmler/hmae.html">
                             <img
                               width="100"
                               src="images/ma.jpg"
