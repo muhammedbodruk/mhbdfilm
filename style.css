@@ -2,6 +2,7 @@ body {
   background-color: #323232;
   text-align: center;
   color: #fff;
+  margin: auto;
 }
 nav {
   text-align: start;
