@@ -7,6 +7,9 @@
     <title>MHBDFILM sitesinin ana sayfasına hoş geldiniz</title>
     <link rel="stylesheet" href="style.css" />
     <style>
+      a {
+        padding: 10px;
+      }
       header {
         background-color: #0d7377;
         color: #fff;
@@ -33,6 +36,9 @@
       body {
         margin: 0%;
       }
+      header_menu {
+        text-align: end;
+      }
     </style>
   </head>
   <body>
@@ -42,31 +48,40 @@
           <tr>
             <td><h1>MHBDFILM</h1></td>
             <td style="width: 32px"></td>
-            <td style="font-size: 24px">
-              <a href="index.html"><b>ana sayfa</b></a>
-            </td>
-            <td>|</td>
-            <td style="font-size: 24px">
-              <a href="filmler/harry_potter-1.html">harry potter 1 izle</a>
-            </td>
-            <td>|</td>
-            <td style="font-size: 24px">
-              <a href="filmler/esaretin_bedeli.html"
-                >Esaretin Bedeli filmini izle</a
-              >
-            </td>
-            <td>|</td>
-            <td style="font-size: 24px">
-              <a href="filmler/yesil_yol.html">yeşil yol filmini izle</a>
-            </td>
-            <td>|</td>
-            <td style="font-size: 24px">
-              <a href="film_onerileri/en-iyi-filmler.html">en iyi 3 film</a>
-            </td>
-            <td>|</td>
-            <td style="font-size: 24px">
-              <a href="register.html">kayıt ol</a>
-            </td>
+            <div id="header_menu">
+              <td style="font-size: 24px">
+                <a href="index.html"><b>ana sayfa</b></a>
+              </td>
+              <td>|</td>
+              <td style="font-size: 24px">
+                <a href="filmler.html"><del>filmler</del></a>
+              </td>
+              <td>|</td>
+              <td style="font-size: 24px">
+                <a href="film_onerileri.html"><del>film önerileri</del></a>
+              </td>
+              <td>|</td>
+              <td style="font-size: 24px">
+                <a href="film_inceleme.html"><del>film incelemeleri</del></a>
+              </td>
+              <td>|</td>
+              <td style="font-size: 24px">
+                <a href="register.html">kayıt ol</a>
+              </td>
+              <td>|</td>
+              <td style="font-size: 24px">
+                <a href="login.html"><del>giriş yap</del></a>
+              </td>
+              <td>
+                <section id="search_box">
+                  <input
+                    type="search"
+                    id="search"
+                    placeholder="aramak istediğiniz şeyi yazınız"
+                  />
+                </section>
+              </td>
+            </div>
           </tr>
         </tbody>
       </table>
@@ -116,15 +131,6 @@
                         <td>
                           <nav>
                             <ul>
-                              <li>
-                                <section id="search_box">
-                                  <input
-                                    type="search"
-                                    id="search"
-                                    placeholder="aramak istediğiniz şeyi yazınız"
-                                  />
-                                </section>
-                              </li>
                               <li>
                                 <a href="#filmler" class="a">filmler</a>
                                 <ol>
