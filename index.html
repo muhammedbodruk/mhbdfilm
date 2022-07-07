@@ -1,509 +1,311 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MHBDFILM sitesinin ana sayfasına hoş geldiniz</title>
+    <title>MHBDFİLM sitesine hoş geldiniz</title>
     <link rel="stylesheet" href="style.css" />
-    <style>
-      a {
-        padding: 10px;
-      }
-      header {
-        background-color: #0d7377;
-        color: #fff;
-      }
-      nav {
-        background-color: #212121;
-        color: #fff;
-      }
-      .a {
-        color: #fff;
-      }
-      footer {
-        background-color: #212121;
-        color: #fff;
-        padding: 20px;
-      }
-      h1 {
-        font-size: 3em;
-        padding-left: 30px;
-      }
-      tr {
-        border: 2px #126e82;
-      }
-      body {
-        margin: 0%;
-      }
-      header_menu {
-        text-align: end;
-      }
-    </style>
+    <style></style>
   </head>
   <body>
     <header>
       <table>
         <tbody>
           <tr>
-            <td><h1>MHBDFILM</h1></td>
-            <td style="width: 32px"></td>
-            <div id="header_menu">
-              <td style="font-size: 24px">
-                <a href="index.html"><b>ana sayfa</b></a>
-              </td>
-              <td>|</td>
-              <td style="font-size: 24px">
-                <a href="filmler.html"><del>filmler</del></a>
-              </td>
-              <td>|</td>
-              <td style="font-size: 24px">
-                <a href="film_onerileri.html"><del>film önerileri</del></a>
-              </td>
-              <td>|</td>
-              <td style="font-size: 24px">
-                <a href="film_inceleme.html"><del>film incelemeleri</del></a>
-              </td>
-              <td>|</td>
-              <td style="font-size: 24px">
-                <a href="register.html">kayıt ol</a>
-              </td>
-              <td>|</td>
-              <td style="font-size: 24px">
-                <a href="login.html"><del>giriş yap</del></a>
+            <td style="width: 25px"></td>
+            <td>
+              <h1>MHBDFİLM</h1>
+            </td>
+            <td style="width: 25px"></td>
+            <td>
+              <a href="index.html" style="font-size: 24px"
+                ><button
+                  class="button"
+                  style="border: 2px solid #222831; background-color: #3330e4"
+                >
+                  <b>Ana Sayfa</b>
+                </button></a
+              >
+            </td>
+            <div id="header-nav">
+              <td>
+                <a href="filmler.html" style="font-size: 24px"
+                  ><button class="button" style="border: 2px solid #222831">
+                    filmler
+                  </button></a
+                >
               </td>
               <td>
-                <section id="search_box">
-                  <input
-                    type="search"
-                    id="search"
-                    placeholder="aramak istediğiniz şeyi yazınız"
-                  />
-                </section>
+                <a href="diziler.html" style="font-size: 24px"
+                  ><button class="button" style="border: 2px solid #222831">
+                    diziler
+                  </button></a
+                >
+              </td>
+              <td>
+                <a href="animeler.html" style="font-size: 24px"
+                  ><button class="button" style="border: 2px solid #222831">
+                    animeler
+                  </button></a
+                >
+              </td>
+              <td>
+                <a href="egitimler.html" style="font-size: 24px"
+                  ><button class="button" style="border: 2px solid #222831">
+                    egitimler
+                  </button></a
+                >
+              </td>
+              <td>
+                <a href="register.html" style="font-size: 24px"
+                  ><button
+                    class="button"
+                    style="border: 2px solid #222831; background-color: #424874"
+                  >
+                    kayıt ol
+                  </button></a
+                >
+              </td>
+              <td>
+                <a href="login.html" style="font-size: 24px"
+                  ><button
+                    class="button"
+                    style="border: 2px solid #222831; background-color: #424874"
+                  >
+                    giriş yap
+                  </button></a
+                >
               </td>
             </div>
           </tr>
         </tbody>
       </table>
     </header>
-    <hr />
-    <section id="content">
+    <div id="filmler">
+      <div style="background-color: #242f9b" id="film_header">
+        <table>
+          <tbody>
+            <tr>
+              <td style="width: 40%"></td>
+              <td style="width: 20%"><a href="filmler.html"><h2>filmler</h2></a></td>
+              <td style="width: 40%; text-align: end">
+                <input
+                  type="search"
+                  placeholder="filmler içerisinde ara"
+                  id="film_search"
+                />
+                <button>ara</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <br />
       <table>
         <tbody>
           <tr>
-            <td>
-              <main>
-                <div id="filmler">
-                  <h2>filmler</h2>
-                  <table id="f">
-                    <tbody>
-                      <tr style="vertical-align: top">
-                        <td>
-                          <a href="filmler/harry_potter-1.html">
-                            <img
-                              width="100"
-                              src="images/hpft0.jpg"
-                              alt="harry potter"
-                            />
-                          </a>
-                        </td>
-                        <td style="width: 15px"></td>
-                        <td style="width: 800px">
-                          <a href="filmler/harry_potter-1.html"
-                            ><h3>harry potter ve felsefe taşı izle</h3>
-                            <p>
-                              Harry Potter'ın ailesi ağır ve şaibeli bir trafik
-                              kazasında ölmüştür. Öksüz ve yetim kalan Harry'nin
-                              sığınabileceği tek yer, arasının pek de iyi
-                              olmadığı teyzesinin yanıdır. Harry, tüm hayatı
-                              boyunca idari ailesi tarafından kötü davranışlarla
-                              büyütülür. Ancak Harry Potter artık 11 yaşındadır
-                              ve Harry'nin hayalleri ve yetenekleri günden güne
-                              su yüzüne çıkmaktadır. Kısa süre sonra Hogwarts
-                              büyücülük okuluna davet edilir. Artık tek amacı,
-                              ailesinin bu şüpheli kazasını araştırmak ve
-                              muhattaplarını cezalandırmaktır.
-                            </p>
-                            <button>izlemek için tıklayınız</button>
-                          </a>
-                        </td>
-                        <td style="width: 50px"></td>
-                        <td rowspan="2">
-                          <nav>
-                            <ul>
-                              <li>
-                                <a href="#filmler" class="a">filmler</a>
-                                <ol>
-                                  <li>
-                                    <a href="#f" class="a"
-                                      >harry potter ve felsefe taşı izle</a
-                                    >
-                                  </li>
-                                  <li>
-                                    <a href="#f0" class="a"
-                                      >Hz. Muhammed: Allah'ın Elçisi filmini
-                                      izle</a
-                                    >
-                                  </li>
-                                  <li>
-                                    <a href="#f1" class="a"
-                                      >esaretin bedeli filmini izle</a
-                                    >
-                                  </li>
-                                  <li>
-                                    <a href="#f2">yeşil yol filmini izle</a>
-                                  </li>
-                                  <li>
-                                    <a href="#f3"
-                                      >yüzüklerin efendisi 1 filmini izle</a
-                                    >
-                                  </li>
-                                </ol>
-                              </li>
-                            </ul>
-                            <ul>
-                              <li>
-                                <a href="#film_onerileri" class="a"
-                                  >film önerileri</a
-                                >
-                                <ol>
-                                  <li>
-                                    <a href="#ef" class="a">en iyi filmler</a>
-                                  </li>
-                                </ol>
-                              </li>
-                            </ul>
-                            <ul>
-                              <li>
-                                <a href="#film_incelemeleri" class="a"
-                                  >film incelemeleri</a
-                                >
-                                <ol>
-                                  <li>
-                                    <a href="#fi" class="a">Esaretin Bedeli</a>
-                                  </li>
-                                  <li>
-                                    <a href="#fi0" class="a"
-                                      >Yüzüklerin Efendisi Kralın Dönüşü</a
-                                    >
-                                  </li>
-                                  <li>
-                                    <a href="#fi1" class="a">yeşil yol</a>
-                                  </li>
-                                </ol>
-                              </li>
-                            </ul>
-                          </nav>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <table id="f0">
-                    <tbody>
-                      <tr style="vertical-align: top">
-                        <td>
-                          <a href="filmler/hmae.html">
-                            <img
-                              width="100"
-                              src="images/ma.jpg"
-                              alt="Hz. Muhammed: Allah'ın Elçisi filmini izle"
-                            />
-                          </a>
-                        </td>
-                        <td style="width: 15px"></td>
-                        <td style="width: 800px">
-                          <a href="filmler/hmae.html"
-                            ><h3>Hz. Muhammed: Allah'ın Elçisi filmini izle</h3>
-                            <p>
-                              Film, 7.yy'da Mekke'de ve Hz.Muhammed'in etrafında
-                              gelişen olayları konu ediniyor. Abraha’nın fil
-                              ordusuyla Mekke’ye yönelişi sebebiyle tedirgin
-                              olan Mekke halkı çaresizdir. Hz. Muhammed’e hamile
-                              olan Hz. Amine geri kalan Mekke halkı gibi kaçıp
-                              dağlara saklanamaz. Abraha kimseciklerin olmadığı
-                              şehri kolayca ele geçirebileceğini düşünür ancak
-                              filler Mekke’ye doğru bir adım dahi atmaz.
-                              Ardından milyonlarca ebabil kuşu, Abraha’nın
-                              ordusunu taş yağmuruna tutarak yok ederler. Bu
-                              olaydan tam bir ay sonra Hz. Muhammed doğmuştur.
-                              Hz. Âmine’nin kucağındaki minik bebek dünyayı
-                              kökünden değiştirecektir... Baran ve Cennetin
-                              Çocukları gibi yapımlara imza atarak önemli bir
-                              başarıya ulaşan Majid Majidi'nin yönetmen
-                              koltuğunda oturduğu yapımda başrolleri Mahdi
-                              Pakdel, Sareh Bayat, Mina Sadati ve Ali Reza
-                              Shoja-Nuri paylaşıyor. Filmin kadrosunda Mohsen
-                              Tanabandeh, Dariush Farhang ve Siamak Adib de yer
-                              alıyor.
-                            </p>
-                            <button>izlemek için tıklayınız</button>
-                          </a>
-                        </td>
-                        <td style="width: 50px"></td>
-                        <td style="background-color: #212121"></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <table id="f1">
-                    <tbody>
-                      <tr style="vertical-align: top">
-                        <td>
-                          <a href="filmler/esaretin_bedeli.html">
-                            <img
-                              width="100"
-                              src="images/es.jpg"
-                              alt="Esaretin Bedeli filmini izle"
-                            />
-                          </a>
-                        </td>
-                        <td style="width: 15px"></td>
-                        <td style="width: 800px">
-                          <a href="filmler/esaretin_bedeli.html"
-                            ><h3>Esaretin Bedeli filmini izle</h3>
-                            <p>
-                              Esaretin Bedeli, Andy ve Red isimli iki mahkumun
-                              parmaklıklar ardında kurdukları dünyanın
-                              hikayesini anlatıyor. Andy Dufresne, genç ve
-                              başarılı bir bankerdir. Karısını ve karısının
-                              sevgilisini öldürmek suçundan yargılanır ve ömür
-                              boyu hapis cezası alır. Shawsank Hapishanesi'nde
-                              dayak, işkence, tecavüz, her türlü durum
-                              yaşanmaktadır fakat Andy gene de hayata bağlı ve
-                              iyimserdir. Bu tutumu etrafındakileri de etkiler.
-                              Andy umutlu bakış açısıyla çevresindeki tüm
-                              mahkumları, parmaklıklar arkasında bile özgür bir
-                              yaşam olabileceğine inandırır. Andy'nin bu
-                              çabalarına ortak olacak bir arkadaşı da olacaktır:
-                              Red.Bir Stephen King uyarlaması olan filmde Morgan
-                              Freeman ve Tim Robbins başrolde. Film, 1995'te,
-                              aralarında en iyi film adaylığı da olmak üzere tam
-                              7 dalda Oscar'a aday gösterildi.
-                            </p>
-                            <button>izlemek için tıklayınız</button>
-                          </a>
-                        </td>
-                        <td style="width: 50px"></td>
-                        <td></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <table id="f2">
-                    <tbody>
-                      <tr style="vertical-align: top">
-                        <td>
-                          <a href="filmler/yesil_yol.html">
-                            <img
-                              width="100"
-                              src="images/yy.jpg"
-                              alt="yeşil yol filmini izle"
-                            />
-                          </a>
-                        </td>
-                        <td style="width: 15px"></td>
-                        <td style="width: 800px">
-                          <a href="filmler/yesil_yol.html"
-                            ><h3>yeşil yol filmini izle</h3>
-                            <p>
-                              Yeşil Yol, bir hapishane görevlisi ile bir
-                              mahkumun öyküsünü anlatıyor. Paul Edgecomb'un
-                              hapishanedeki görevi, idama mahkum edilen
-                              mahkumları son yolculuklarına uğurlamaktır.
-                              Çalıştığı yıllar içerisinde yüzlerce mahkumu idam
-                              etmiştir. Bir gün John Coffey isimli korkutucu
-                              görünümlü bir adamla tanışır. Ancak Coffey'in bu
-                              ürkütücü görünümünün altında oldukça saf bir ruh
-                              yatmaktadır. Coffey, iki küçük kız çocuğunun katil
-                              davasında yargılanmaktadır. Coffey'in günden güne
-                              gün yüzüne çıkan dünya ötesi güçleri, karakteri
-                              hakkında yeni ipuçlarını anbean ortaya
-                              çıkaracaktır.
-                            </p>
-                            <button>izlemek için tıklayınız</button>
-                          </a>
-                        </td>
-                        <td style="width: 50px"></td>
-                        <td></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <table id="f3">
-                    <tbody>
-                      <tr style="vertical-align: top">
-                        <td>
-                          <a href="filmler/ye1.html">
-                            <img
-                              width="100"
-                              src="images/yuk.jpg"
-                              alt="Yüzüklerin Efendisi: Yüzük Kardeşliği filmini izle"
-                            />
-                          </a>
-                        </td>
-                        <td style="width: 15px"></td>
-                        <td style="width: 800px">
-                          <a href="filmler/yesil_yol.html"
-                            ><h3>
-                              Yüzüklerin Efendisi: Yüzük Kardeşliği filmini izle
-                            </h3>
-                            <p>
-                              Yüzüklerin Efendisi: Yüzük Kardeşliği, dünyanın
-                              kaderini değişterecek olan yüzükten kurtulmak için
-                              verilen mücadeleyi konu ediyor. Yıllar önce
-                              üretilen ve Orta Dünya topraklarına kandan başka
-                              hiçbir şey getirmeyen yüzüklerin sonuncusu,
-                              üretiminden yüz yıllar sonra ortaya çıkar.
-                              Amcasının kendisine emanet ettiği yüzüğün nelere
-                              kadir olduğundan habersiz olan Frodo, büyücü
-                              Gandalf'ın anlattıkları sonrasında dehşete
-                              kapılır. Bu yüzükten ve müstakbel savaşlardan
-                              kurtulmanın tek yolu, gücünü toplamaya çalışan
-                              Sauron'u da engellemek için bu yüzüğü yok
-                              etmektir. Yüzüğü yok edilebileceği tek yer olan
-                              Mordor'a götürmek için kendini feda eden
-                              savaşçılardan oluşan bir ekip oluşturulur. Çok
-                              uzun ve çetin geçecek olan yolculuk başlar. Orta
-                              Dünya'nın kaderi, bu insanların ellerindedir.
-                            </p>
-                            <button>izlemek için tıklayınız</button>
-                          </a>
-                        </td>
-                        <td style="width: 50px"></td>
-                        <td></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-                <br /><br /><br />
-                <hr />
-                <br /><br /><br />
-                <h2>film önerileri</h2>
-                <div id="film_onerileri">
-                  <table id="ef">
-                    <tbody>
-                      <tr style="vertical-align: top">
-                        <td>
-                          <a href="film_onerileri/en-iyi-filmler.html">
-                            <img
-                              width="100"
-                              height="75"
-                              src="images/ef.jpg"
-                              alt="en iyi filmler"
-                            />
-                          </a>
-                        </td>
-                        <td style="width: 15px"></td>
-                        <td>
-                          <a href="film_onerileri/en-iyi-filmler.html"
-                            ><h3>en iyi filmler</h3>
-                            <p>
-                              bu metinde size en iyi filmler sıralayacağız ve
-                              size bu filmerin özetlerini vereceğiz. bu sıralama
-                              ve özetler beyazperde sitesine aittir.
-                            </p>
-                            <button>tüm inceleme için tıklayınız</button>
-                          </a>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-                <br /><br /><br />
-                <hr />
-                <br /><br /><br />
-                <h2>film incelemeleri</h2>
-                <div id="film_incelemeleri">
-                  <table>
-                    <tbody>
-                      <tr style="vertical-align: top">
-                        <td id="fi">
-                          <a href="film_inceleme/esaretin-bedeli.html">
-                            <img
-                              width="100"
-                              src="images/es.jpg"
-                              alt="Esaretin Bedeli"
-                            />
-                          </a>
-                        </td>
-                        <td style="width: 15px"></td>
-                        <td id="">
-                          <a href="film_inceleme/esaretin-bedeli.html"
-                            ><h3>Esaretin Bedeli</h3>
-                            <p>
-                              Esaretin Bedeli, Andy ve Red isimli iki mahkumun
-                              parmaklıklar ardında kurdukları dünyanın
-                              hikayesini anlatıyor.
-                            </p>
-                            <button>tüm inceleme için tıklayınız</button>
-                          </a>
-                        </td>
-                      </tr>
-                      <tr style="vertical-align: top">
-                        <td id="fi0">
-                          <a
-                            href="film_inceleme/yuzuklerin-efendisi-kralın_donusu.html"
-                          >
-                            <img
-                              width="100"
-                              src="images/yk.jpg"
-                              alt="Yüzüklerin Efendisi Kralın Dönüşü"
-                            />
-                          </a>
-                        </td>
-                        <td style="width: 15px"></td>
-                        <td>
-                          <a
-                            href="film_inceleme/yuzuklerin-efendisi-kralın_donusu.html"
-                            ><h3>Yüzüklerin Efendisi Kralın Dönüşü</h3>
-                            <p>
-                              Yüzüklerin Efendisi: Kralın Dönüşü, Tek Yüzük'ün
-                              yok edilmesi için verilen mücadeleyi konu ediyor.
-                            </p>
-                            <button>tüm inceleme için tıklayınız</button>
-                          </a>
-                        </td>
-                      </tr>
-                      <tr style="vertical-align: top">
-                        <td id="fi1">
-                          <a href="film_inceleme/yesil_yol.html">
-                            <img
-                              width="100"
-                              src="images/yy.jpg"
-                              alt="yeşil yol"
-                            />
-                          </a>
-                        </td>
-                        <td style="width: 15px"></td>
-                        <td>
-                          <a href="film_inceleme/yesil_yol.html"
-                            ><h3>Yeşil Yol</h3>
-                            <p>
-                              Yeşil Yol, bir hapishane görevlisi ile bir
-                              mahkumun öyküsünü anlatıyor. Paul Edgecomb'un
-                              hapishanedeki görevi, idama mahkum edilen
-                              mahkumları son yolculuklarına uğurlamaktır.
-                            </p>
-                            <button>tüm inceleme için tıklayınız</button>
-                          </a>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </main>
+            <td
+              style="width: 200px"
+              rowspan="2
+            "
+            >
+              reklamlar
+            </td>
+            <td class="film" style="width: 270; height: 360">
+              <a href="filmler/hpfs.html"
+                ><h4>harry potter ve felsefe taşı</h4>
+                <img width="170" src="images/hpft0.jpg" alt="r" /><br /><button
+                  class="film-button"
+                >
+                  filmi izlemek için tıkla
+                </button></a
+              >
+            </td>
+            <td class="film">
+              <a href="filmler/ye1.html"
+                ><h4>Yüzüklerin Efendisi: Yüzük Kardeşliği</h4>
+                <img width="170" src="images/yuk.jpg" alt="r0" /><br /><button
+                  class="film-button"
+                >
+                  filmi izlemek için tıkla
+                </button></a
+              >
+            </td>
+            <td class="film">
+              <a href="filmler/es.html"
+                ><h4>Esaretin Bedeli</h4>
+                <img width="170" src="images/es.jpg" alt="r1" /><br /><button
+                  class="film-button"
+                >
+                  filmi izlemek için tıkla
+                </button></a
+              >
+            </td>
+            <nav>
+              <td style="text-align: justify" rowspan="2">
+                <ul>
+                  <li>
+                    <a href="#filmler"><b>filmler</b></a>
+                    <ol>
+                      <li>
+                        <a href="filmler/hpfs.html"
+                          >harry potter ve felsefe taşı</a
+                        >
+                      </li>
+                      <li>
+                        <a href="filmler/ye1.html"
+                          >Yüzüklerin Efendisi: Yüzük Kardeşliği</a
+                        >
+                      </li>
+                      <li><a href="filmler/es.html">Esaretin Bedeli</a></li>
+                    </ol>
+                  </li>
+                </ul>
+              </td>
+            </nav>
+          </tr>
+          <tr>
+            <td class="film" style="width: 270; height: 360">
+              <a href="filmler/hpfs"
+                ><h4>harry potter ve felsefe taşı</h4>
+                <img width="170" src="images/hpft0.jpg" alt="r" /><br /><button
+                  class="film-button"
+                >
+                  filmi izlemek için tıkla
+                </button></a
+              >
+            </td>
+            <td class="film">
+              <a href="filmler/ye1.html"
+                ><h4>Yüzüklerin Efendisi: Yüzük Kardeşliği</h4>
+                <img width="170" src="images/yuk.jpg" alt="r0" /><br /><button
+                  class="film-button"
+                >
+                  filmi izlemek için tıkla
+                </button></a
+              >
+            </td>
+            <td class="film">
+              <a href="filmler/es.html"
+                ><h4>Esaretin Bedeli</h4>
+                <img width="170" src="images/es.jpg" alt="r1" /><br /><button
+                  class="film-button"
+                >
+                  filmi izlemek için tıkla
+                </button></a
+              >
             </td>
           </tr>
         </tbody>
       </table>
-    </section>
-    <br /><br /><br />
-    <footer>
+      <br />
+    </div>
+    <div id="diziler">
+      <div style="background-color: #f637ec" id="dizi_header">
+        <table>
+          <tbody>
+            <tr>
+              <td style="width: 100%"><a href="diziler.html"><h2>diziler</h2></a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <br />
       <table>
         <tbody>
           <tr>
-            <td style="width: 500px"></td>
-            <td>bana ulaşmak için:muhammedbodruk2@gmail.com</td>
+            <td
+              style="width: 200px"
+              rowspan="2
+            "
+            >
+              reklamlar
+            </td>
+            <td class="film" style="width: 270; height: 360">
+              <a href="diziler/mr/mrs1b1.html"
+                ><h4>Mr.Robot</h4>
+                <img width="170" src="images/mr.jpg" alt="r" /><br /><button
+                  class="film-button"
+                >
+                  filmi izlemek için tıkla
+                </button></a
+              >
+            </td>
+            <td class="film" style="width: 270; height: 360">
+              <a href="diziler/mr/mrs1b1.html"
+                ><h4>Mr.Robot</h4>
+                <img width="170" src="images/mr.jpg" alt="r" /><br /><button
+                  class="film-button"
+                >
+                  filmi izlemek için tıkla
+                </button></a
+              >
+            </td>
+            <td class="film" style="width: 270; height: 360">
+              <a href="diziler/mr/mrs1b1.html"
+                ><h4>Mr.Robot</h4>
+                <img width="170" src="images/mr.jpg" alt="r" /><br /><button
+                  class="film-button"
+                >
+                  filmi izlemek için tıkla
+                </button></a
+              >
+            </td>
+            <nav>
+              <td style="text-align: justify" rowspan="2">
+                <ul>
+                  <li>
+                    <a href="#diziler"><b>diziler</b></a>
+                    <ol>
+                      <li>
+                        <a href="diziler/mr/mrs1b1.html">Mr.Robot</a>
+                      </li>
+                    </ol>
+                  </li>
+                </ul>
+              </td>
+            </nav>
+          </tr>
+          <tr>
+            <td class="film" style="width: 270; height: 360">
+              <a href="diziler/mr/mrs1b1.html"
+                ><h4>Mr.Robot</h4>
+                <img width="170" src="images/mr.jpg" alt="r" /><br /><button
+                  class="film-button"
+                >
+                  filmi izlemek için tıkla
+                </button></a
+              >
+            </td>
+            <td class="film" style="width: 270; height: 360">
+              <a href="diziler/mr/mrs1b1.html"
+                ><h4>Mr.Robot</h4>
+                <img width="170" src="images/mr.jpg" alt="r" /><br /><button
+                  class="film-button"
+                >
+                  filmi izlemek için tıkla
+                </button></a
+              >
+            </td>
+            <td class="film" style="width: 270; height: 360">
+              <a href="diziler/mr/mrs1b1.html"
+                ><h4>Mr.Robot</h4>
+                <img width="170" src="images/mr.jpg" alt="r" /><br /><button
+                  class="film-button"
+                >
+                  filmi izlemek için tıkla
+                </button></a
+              >
+            </td>
           </tr>
         </tbody>
       </table>
+    </div>
+    <footer>
+      <br /><br />
+      bana ulaşmak için:muhammedbodruk2@gmail.com
+      <br /><br /><br />
     </footer>
   </body>
 </html>

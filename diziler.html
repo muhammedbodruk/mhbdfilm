@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>filmler</title>
+    <title>diziler</title>
     <link rel="stylesheet" href="style.css" />
     <style>
       h1 {
@@ -32,10 +32,7 @@
             <td style="width: 10px"></td>
             <td>
               <a href="filmler.html" style="font-size: 24px"
-                ><button
-                  class="button"
-                  style="border: 2px solid #222831; background-color: #3330e4"
-                >
+                ><button class="button" style="border: 2px solid #222831">
                   <b>filmler</b>
                 </button></a
               >
@@ -43,7 +40,10 @@
             <td style="width: 10px"></td>
             <td>
               <a href="diziler.html" style="font-size: 24px"
-                ><button class="button" style="border: 2px solid #222831">
+                ><button
+                  class="button"
+                  style="border: 2px solid #222831; background-color: #3330e4"
+                >
                   diziler
                 </button></a
               >
@@ -90,7 +90,26 @@
       </table>
     </header>
     <div id="filmler">
-      <h2>filmler</h2>
+      <div style="background-color: #f637ec" id="dizi_header">
+        <table>
+          <tbody>
+            <tr>
+              <td style="width: 40%"></td>
+              <td style="width: 20%">
+                <a href="filmler.html"><h2>diziler</h2></a>
+              </td>
+              <td style="width: 40%; text-align: end">
+                <input
+                  type="search"
+                  placeholder="diziler içerisinde ara"
+                  id="film_search"
+                />
+                <button>ara</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
       <br />
       <table>
         <tbody>
@@ -103,29 +122,29 @@
               reklamlar
             </td>
             <td class="film" style="width: 270; height: 360">
-              <a href="filmler/hpfs.html"
-                ><h4>harry potter ve felsefe taşı</h4>
-                <img width="170" src="images/hpft0.jpg" alt="r" /><br /><button
+              <a href="diziler/mr.html"
+                ><h4>Mr.Robot</h4>
+                <img width="170" src="images/mr.jpg" alt="r" /><br /><button
                   class="film-button"
                 >
                   filmi izlemek için tıkla
                 </button></a
               >
             </td>
-            <td class="film">
-              <a href="filmler/ye1.html"
-                ><h4>Yüzüklerin Efendisi: Yüzük Kardeşliği</h4>
-                <img width="170" src="images/yuk.jpg" alt="r0" /><br /><button
+            <td class="film" style="width: 270; height: 360">
+              <a href="diziler/mr.html"
+                ><h4>Mr.Robot</h4>
+                <img width="170" src="images/mr.jpg" alt="r" /><br /><button
                   class="film-button"
                 >
                   filmi izlemek için tıkla
                 </button></a
               >
             </td>
-            <td class="film">
-              <a href="filmler/es.html"
-                ><h4>Esaretin Bedeli</h4>
-                <img width="170" src="images/es.jpg" alt="r1" /><br /><button
+            <td class="film" style="width: 270; height: 360">
+              <a href="diziler/mr.html"
+                ><h4>Mr.Robot</h4>
+                <img width="170" src="images/mr.jpg" alt="r" /><br /><button
                   class="film-button"
                 >
                   filmi izlemek için tıkla
@@ -133,38 +152,45 @@
               >
             </td>
             <nav>
-              <td rowspan="2">
+              <td style="text-align: justify" rowspan="2">
                 <ul>
-                  <li><a href="#filmler">filmler</a></li>
+                  <li>
+                    <a href="#diziler"><b>diziler</b></a>
+                    <ol>
+                      <li>
+                        <a href="diziler/mr.html">Mr.Robot</a>
+                      </li>
+                    </ol>
+                  </li>
                 </ul>
               </td>
             </nav>
           </tr>
           <tr>
             <td class="film" style="width: 270; height: 360">
-              <a href="filmler/hpfs"
-                ><h4>harry potter ve felsefe taşı</h4>
-                <img width="170" src="images/hpft0.jpg" alt="r" /><br /><button
+              <a href="diziler/mr/mrs1b1.html"
+                ><h4>Mr.Robot</h4>
+                <img width="170" src="images/mr.jpg" alt="r" /><br /><button
                   class="film-button"
                 >
                   filmi izlemek için tıkla
                 </button></a
               >
             </td>
-            <td class="film">
-              <a href="filmler/ye1.html"
-                ><h4>Yüzüklerin Efendisi: Yüzük Kardeşliği</h4>
-                <img width="170" src="images/yuk.jpg" alt="r0" /><br /><button
+            <td class="film" style="width: 270; height: 360">
+              <a href="diziler/mr/mrs1b1.html"
+                ><h4>Mr.Robot</h4>
+                <img width="170" src="images/mr.jpg" alt="r" /><br /><button
                   class="film-button"
                 >
                   filmi izlemek için tıkla
                 </button></a
               >
             </td>
-            <td class="film">
-              <a href="filmler/es.html"
-                ><h4>Esaretin Bedeli</h4>
-                <img width="170" src="images/es.jpg" alt="r1" /><br /><button
+            <td class="film" style="width: 270; height: 360">
+              <a href="diziler/mr/mrs1b1.html"
+                ><h4>Mr.Robot</h4>
+                <img width="170" src="images/mr.jpg" alt="r" /><br /><button
                   class="film-button"
                 >
                   filmi izlemek için tıkla
